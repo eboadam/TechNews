@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contacta con el equipo de TechNews." />
+  <title>TechNews | Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="logo" href="../index.html" aria-label="TechNews - Inicio"><span>Tech</span>News</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">&#9776;</button>
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a><a href="../index.html#noticias">Noticias</a><a class="active" href="contacto.html">Contacto</a>
+      </nav>
+      <label class="search"><span aria-hidden="true">&#128269;</span><input type="search" placeholder="Buscar noticias, temas..." aria-label="Buscar noticias" /></label>
+    </div>
+  </header>
+
+  <main class="contact-main">
+    <section class="contact-hero container" aria-labelledby="contact-title">
+      <div><span>CONTACTO</span><h1 id="contact-title">Hablemos de tecnología</h1><p>¿Tienes una pregunta, sugerencia o te gustaría colaborar con nosotros?<br>Nos encantaría saber de ti. Completa el formulario y te responderemos<br>lo antes posible.</p></div>
+    </section>
+
+    <div class="contact-layout container">
+      <section class="contact-form-card" aria-labelledby="form-title">
+        <h2 id="form-title">Envíanos un mensaje</h2>
+        <form id="contactForm">
+          <label>Nombre completo <b>*</b><input name="name" type="text" required placeholder="Tu nombre" autocomplete="name"></label>
+          <label>Correo electrónico <b>*</b><input name="email" type="email" required placeholder="tu@email.com" autocomplete="email"></label>
+          <label>Asunto <b>*</b><select name="subject" required><option value="">Selecciona un asunto</option><option>Consulta general</option><option>Sugerencia</option><option>Colaboración</option><option>Publicidad</option><option>Soporte técnico</option></select></label>
+          <label>Mensaje <b>*</b><span class="textarea-wrap"><textarea id="message" name="message" required maxlength="500" placeholder="Escribe tu mensaje aquí..."></textarea><small><span id="charCount">0</span> / 500</small></span></label>
+          <button class="send-button" type="submit"><span>&#10148;</span> Enviar mensaje</button>
+          <p class="privacy">Al enviar este formulario aceptas nuestra <a href="#">Política de Privacidad.</a></p>
+          <p id="contactStatus" class="contact-status" role="status"></p>
+        </form>
+      </section>
+
+      <div class="contact-right">
+        <section class="contact-info-card" aria-labelledby="info-title">
+          <div class="contact-details">
+            <h2 id="info-title">Otras formas de contacto</h2>
+            <div class="contact-item"><span>&#9993;</span><p><strong>Escríbenos</strong><a href="mailto:hola@technews.com">hola@technews.com</a></p></div>
+            <div class="contact-item"><span>&#9742;</span><p><strong>Llámanos</strong><a href="tel:+573001234567">+57 300 123 4567</a><small>Lunes a viernes de 8:00 a.m. a 6:00 p.m.</small></p></div>
+            <div class="contact-item"><span>&#9679;</span><p><strong>Nuestra ubicación</strong>Bogotá, Colombia<small>Cra. 7 # 123-45, Oficina 501</small></p></div>
+            <div class="contact-item"><span>&#9679;</span><p><strong>Síguenos en redes</strong><span class="contact-socials"><a href="#">&#9829;</a><a href="#">in</a><a href="#">&#9654;</a><a href="#">◎</a></span></p></div>
+          </div>
+          <div class="map" role="img" aria-label="Mapa de la ubicación de TechNews en Bogotá">
+            <div class="map-roads"></div><div class="map-zoom"><button aria-label="Acercar">+</button><button aria-label="Alejar">−</button></div>
+            <div class="map-marker"><span>&#9679;</span><p><strong>TechNews</strong>Bogotá, Colombia</p></div><span class="map-area">CHAPINERO</span>
+          </div>
+        </section>
+        <section class="collaboration-card">
+          <span class="people-icon">&#9827;</span><div><h2>¿Quieres ser parte de TechNews?</h2><p>Estamos abiertos a colaboraciones, contenido de invitados, alianzas y nuevas ideas.<br>¡Hablemos!</p><button id="collaborateButton">Quiero colaborar</button></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner container">
+      <div><a class="logo footer-logo" href="../index.html"><span>Tech</span>News</a><p>Tecnología hoy, un mejor mañana.</p></div>
+      <nav aria-label="Navegación del pie"><a href="../index.html">Inicio</a><a href="../index.html#noticias">Noticias</a><a href="contacto.html">Contacto</a></nav>
+      <div class="socials"><a href="#" aria-label="Twitter">&#9829;</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">&#9654;</a><a href="#" aria-label="Instagram">◎</a></div>
+    </div>
+    <p class="copyright container">© 2025 TechNews. Todos los derechos reservados.</p>
+  </footer>
+  <script src="../assets/js/contacto.js"></script>
+</body>
+</html>
