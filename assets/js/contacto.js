@@ -19,8 +19,4 @@ form.addEventListener('submit', (event) => {
   count.textContent = '0';
 });
 
-document.querySelector('#collaborateButton').addEventListener('click', () => {
-  form.elements.subject.value = 'Colaboración';
-  document.querySelector('#form-title').scrollIntoView({ behavior: 'smooth' });
-  form.elements.name.focus({ preventScroll: true });
-});
+// El botón "Quiero colaborar" abre el modal definido en colabora.js
