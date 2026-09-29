@@ -1,0 +1,2 @@
+# TechNews
+Repositorio entrega TechNews
