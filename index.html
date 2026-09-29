@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TechNews: las noticias más recientes sobre tecnología, inteligencia artificial, software y móviles." />
+  <title>TechNews | Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="logo" href="#inicio" aria-label="TechNews - Inicio"><span>Tech</span>News</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <a class="active" href="#inicio">Inicio</a><a href="#noticias">Noticias</a><a href="#contacto">Contacto</a>
+      </nav>
+      <label class="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Buscar noticias, temas..." aria-label="Buscar noticias" /></label>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <span class="pill">DESTACADA</span>
+        <h1 id="hero-title">La inteligencia artificial<br>está redefiniendo el futuro</h1>
+        <p>Descubre cómo la IA está transformando industrias, impulsando<br>la innovación y abriendo nuevas oportunidades en todo el mundo.</p>
+        <a class="primary-button" href="#noticias">Leer noticia <span>→</span></a>
+      </div>
+      <blockquote><i></i>“La tecnología no solo<br>cambia lo que hacemos,<br>sino cómo imaginamos<br>el futuro.”</blockquote>
+    </section>
+
+    <div class="content-layout container">
+      <section id="noticias" class="news-section" aria-labelledby="news-title">
+        <div class="section-heading"><h2 id="news-title">Últimas noticias</h2><button id="showAll" class="text-button">Ver todas&nbsp; →</button></div>
+        <div id="newsGrid" class="news-grid"></div>
+        <p id="emptyState" class="empty-state" hidden>No encontramos noticias con esa búsqueda.</p>
+      </section>
+
+      <aside class="sidebar" aria-label="Filtros y suscripción">
+        <section class="side-card categories">
+          <h2>Categorías</h2>
+          <button data-category="Inteligencia Artificial"><span class="category-icon">♙</span>Inteligencia Artificial<i>›</i></button>
+          <button data-category="Hardware"><span class="category-icon">▦</span>Hardware<i>›</i></button>
+          <button data-category="Software"><span class="category-icon">&lt;/&gt;</span>Software<i>›</i></button>
+          <button data-category="Móviles"><span class="category-icon">▯</span>Móviles<i>›</i></button>
+          <button data-category="Ciberseguridad"><span class="category-icon">◈</span>Ciberseguridad<i>›</i></button>
+          <button data-category="Ciencia y Espacio"><span class="category-icon">⌁</span>Ciencia y Espacio<i>›</i></button>
+          <button data-category="Tecnología Verde"><span class="category-icon">♧</span>Tecnología Verde<i>›</i></button>
+        </section>
+        <section class="side-card newsletter">
+          <h2>Suscríbete a nuestro boletín</h2><p>Recibe las últimas noticias de tecnología directamente en tu correo.</p>
+          <form id="newsletterForm"><label><span>✉</span><input type="email" required placeholder="Tu correo electrónico" aria-label="Correo electrónico" /></label><button>Suscribirme</button></form>
+          <p id="formMessage" class="form-message" role="status"></p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer id="contacto">
+    <div class="footer-inner container">
+      <div><a class="logo footer-logo" href="#inicio"><span>Tech</span>News</a><p>Tecnología hoy, un mejor mañana.</p></div>
+      <nav aria-label="Navegación del pie"><a href="#inicio">Inicio</a><a href="#noticias">Noticias</a><a href="#contacto">Contacto</a></nav>
+      <div class="socials"><a href="#" aria-label="Twitter">♥</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="Instagram">◎</a></div>
+    </div>
+    <p class="copyright container">© 2025 TechNews. Todos los derechos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
